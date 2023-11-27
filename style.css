@@ -1,0 +1,163 @@
+*{
+    margin: 0px;
+    box-sizing: border-box;
+    padding: 0px;
+}
+@font-face{
+    font-family: league;
+    src: url(./LeagueSpartan-VariableFont_wght.ttf);
+
+}
+:root{
+    --Very_Dark_Magenta: hsl(300, 43%, 22%);
+    --Soft_Pink: hsl(333, 80%, 67%);
+
+    /* ### Neutral */
+    
+    --Dark_Grayish_Magenta: hsl(303, 10%, 53%);
+    --Light_Grayish_Magenta: hsl(300, 24%, 96%);
+    --White: hsl(0, 0%, 100%);
+}
+body{
+    height: 100vh;
+    font-family: League, sans-serif;
+    margin: 60px;
+    
+}
+main{
+    background-image:url(./images/bg-pattern-top-desktop.svg), url(./images/bg-pattern-bottom-desktop.svg);
+    background-position: top left, right bottom;
+    background-repeat: no-repeat;
+    display: flex;
+    background-size: 50%, 90%;
+
+    flex-direction: column;
+
+    justify-content: space-between;
+    padding: 10%;
+    
+}
+.top{
+    display: flex;
+    /* width: 100%; */
+    /* align-self: center; */
+    justify-items: center;
+    /* background-image: url(./images/bg-pattern-top-desktop.svg); */
+    background-repeat: no-repeat;
+    justify-content: space-between;
+
+    color: var(--Very_Dark_Magenta);
+}
+.left{
+    /* width: 60%; */
+    width: 300px;
+    /* padding: 80px; */
+    margin: right;
+    /* margin-right: 20%; */
+}
+
+.left>h1{
+    font-size: 2rem;
+}
+.right{
+    margin-top: 40px;
+}
+.review{
+    border-radius: 10px;
+    margin-bottom: 20px;
+   display: flex;
+   padding: 10px;
+    background-color: var(--Light_Grayish_Magenta);
+}
+.stars{
+    margin-right: 20px;
+}
+.clue2{
+    margin-left: 50px;
+}
+.clue3{
+    margin-left: 80px;
+}
+.bottom {
+    display: flex;
+    margin-top: 50px;
+    /* width: 80%; */
+}
+.buyer1 ,.buyer2,.buyer3{
+    background-color: var(--Very_Dark_Magenta);
+    margin: 10px;
+    /* display: flex; */
+    border-radius: 5px;
+    color: white;
+    height: fit-content;
+    padding: 10px;
+}
+
+.up{
+    display: flex;
+}
+.text{
+    margin-top: 20px;
+}
+.text >h3{
+    /* color: var(--White); */
+    color: var(--Light_Grayish_Magenta);
+}
+.text >h4{
+    color:var(--Soft_Pink);
+}
+.pics> img{
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.buyer2{
+    margin-top: 20px;
+}
+.buyer3{
+    margin-top: 30px;
+}
+
+@media (max-width:750px){
+    body{
+        padding: 0px;
+        margin: 0px;
+    }
+    main{
+        padding: 0px;
+        margin: 0px;
+        padding: 30px;
+        background-image: none;
+        background-image: url(./images/bg-pattern-top-mobile.svg),url(./images/bg-pattern-bottom-mobile.svg);
+        background-position: top right, bottom;
+    
+    }
+    .top{
+        flex-direction: column;
+       
+    }
+   .stars{
+       justify-content: center;
+       text-align: center;
+   }
+   .comment{
+       justify-content: center;
+       text-align: center;
+   }
+    .left > h1{
+        font-size: 3rem;
+    }
+    .bottom{
+        display: flex;
+        flex-direction: column;
+    }
+    .review{
+        margin: 0px;
+        margin-bottom: 10px;
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+    }
+    .right{
+        width: 100%;
+    }
+}
